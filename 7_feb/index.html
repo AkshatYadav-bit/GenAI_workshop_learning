@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel = "stylesheet" href  = "style.css">
+</head>
+<body>
+    <div class = "navbar">
+        <div id = "logo">
+            <img src = "logo.jpg" id = "logo_img">
+        </div>
+    <div id = "home"><a href=""> home </a>     </div>
+    <div id = "login"> <a href=""> login </a>  </div>
+    <div id = "about"><a href=""> about </a>    </div>
+    <div id = "contactUs"><a href=""> contact us</a></div>
+    </div>
+    <div class = "web_body">
+        <!-- <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora autem nesciunt porro asperiores eum laudantium at similique temporibus deserunt. Molestias eaque nam et ratione atque dolor officia cupiditate porro labore.</p> -->
+
+    </div>
+    <script>
+       const menuItems = document.querySelectorAll('.navbar > div');
+       menuItems.forEach(item => {
+    item.addEventListener('click', function () {
+
+        // remove active from all
+        menuItems.forEach(el => el.classList.remove('active'));
+
+        // add active to clicked one
+        this.classList.add('active');
+    });
+});
+
+    </script>
+
+</body>
+</html>

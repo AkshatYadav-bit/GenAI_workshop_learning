@@ -1,0 +1,68 @@
+// Variables (stop hardcoding colors everywhere)
+$bg-main: #233142;
+$bg-navbar: #455d7a;
+$text-color: #e3e3e3;
+$active-bg: #f95959;
+$active-text: rgb(128, 128, 128);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: $text-color;
+}
+
+body {
+    background: $bg-main;
+    height: 100%;
+}
+
+.web_body {
+    height: 80%;
+}
+
+.navbar {
+    width: 100%;
+    height: 20vh;
+    background: $bg-navbar;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+
+    // child divs
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    // logo section
+    #logo {
+        justify-content: flex-start;
+
+        #logo_img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+    }
+}
+
+// links
+a {
+    text-decoration: none;
+    font-size: 1.5em;
+
+    &:active {
+        color: $active-text;
+    }
+}
+
+// active state
+.active {
+    background: $active-bg;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div id="logo">
+            <img src="logo.jpg" id="logo_img">
+        </div>
+
+        <div class="nav-item active" id="home"><a href="#">Home</a></div>
+        <div class="nav-item" id="login"><a href="#">Login</a></div>
+        <div class="nav-item" id="about"><a href="#">About</a></div>
+        <div class="nav-item" id="contactUs"><a href="#">Contact Us</a></div>
+    </div>
+
+    <div class="web_body">
+         <h2>Booked Tickets</h2>
+
+    <table id="bookingTable">
+        <thead>
+            <tr>
+                <th>Booking ID</th>
+                <th>Destination</th>
+                <th>Month</th>
+                <th>Day</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    </div>
+    <div class="chatbot-icon">
+    💬
+    </div>
+    <div id="chat-container">
+    <div id="chat-header">Ticket Bot</div>
+
+    <div id="chatbox"></div>
+
+    <div id="chat-input">
+        <input type="text" id="userInput" placeholder="Type message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+
+</body>
+</html>
