@@ -54,3 +54,8 @@ If you prefer running the bot directly in your terminal:
 ```bash
 python chatbot.py
 ```
+
+## Screenshots
+
+![Interface](readme_img.png)
+![Active Bookings](readme_img_2.png)
