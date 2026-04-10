@@ -1,40 +1,56 @@
-# GenAI Workshop Learning
+# TicketingBot - GenAI Workshop Learning
 
-## Overview
-The GenAI Workshop Learning is an initiative aimed at enhancing knowledge and skills in generative AI technologies. The workshop provides participants with insights into the latest advancements in AI and hands-on experience in building AI models.
+A simple intent-based chatbot application that allows users to book, reschedule, and cancel travel tickets. This project demonstrates basic conversational flows, entity extraction, and state management using Python.
 
-## Structure
-The workshop is structured into several sessions, covering various topics including:
-- Introduction to Generative AI
-- Tools and Frameworks for Development
-- Hands-on Projects
-- Best Practices in AI Development
+## Features
+
+- **Book a Ticket**: Automatically extracts destination, month, and day for travel booking.
+- **Cancel a Booking**: Delete an existing booking using the generated Booking ID.
+- **Reschedule Date**: Update the travel dates of an existing booking.
+- **Two Interfaces**: Choose to run the bot in the terminal or use a web-based chat UI.
 
 ## Tech Stack
-This project utilizes several technologies and tools, including:
-- Python
-- TensorFlow
-- PyTorch
-- Hugging Face
-- Jupyter Notebooks
 
-## Getting Started
-To get started with the GenAI Workshop Learning project, follow these steps:
-1. Clone the repository:
-   ```
+- **Backend**: Python, FastAPI
+- **Frontend**: HTML, CSS, Vanilla JavaScript
+
+## Project Structure
+
+- `app.py`: The FastAPI server containing the chatbot endpoints and in-memory database.
+- `chatbot.py`: A CLI (Command Line Interface) version of the TicketingBot.
+- `index.html`, `style.css`, `script.js`: The frontend web application featuring a chat interface and active bookings table.
+- `requirements.txt`: Python package dependencies.
+
+## Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
    git clone https://github.com/AkshatYadav-bit/GenAI_workshop_learning.git
-   ```
-2. Navigate to the directory:
-   ```
    cd GenAI_workshop_learning
    ```
-3. Install the required dependencies:
-   ```
+
+2. **Install the dependencies:**
+   Ensure you have Python installed, then run:
+   ```bash
    pip install -r requirements.txt
    ```
-4. Start your learning journey!
 
-## Contact
-For any inquiries or feedback, feel free to reach out:
-- **Email:** akshatyadavbit@example.com
-- **GitHub:** [AkshatYadav-bit](https://github.com/AkshatYadav-bit)
+## Usage
+
+### 1. Web Application (FastAPI + HTML)
+To run the web version of the chatbot with the frontend UI:
+
+1. **Start the FastAPI backend:**
+   ```bash
+   uvicorn app:app --reload
+   ```
+   *(By default, this will run on `http://127.0.0.1:8000`)*
+
+2. **Open the frontend:**
+   Simply double-click on the `index.html` file to open it in your web browser. You can view your bookings in the table and interact with the TicketingBot by clicking the 💬 icon.
+
+### 2. CLI Chatbot
+If you prefer running the bot directly in your terminal:
+```bash
+python chatbot.py
+```
