@@ -55,6 +55,10 @@ If you prefer running the bot directly in your terminal:
 python chatbot.py
 ```
 
+## Video Demo
+
+[Watch the project demonstration video here](https://drive.google.com/file/d/1gwdJUzRNbsv6mzhI8yz5jZBXlm8C7oDg/view?usp=sharing)
+
 ## Screenshots
 
 ![Interface](readme_img.png)
